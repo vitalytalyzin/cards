@@ -5,7 +5,7 @@ import Card from './components/Card/Card';
 
 const cards = [
   {
-    image: 'img/Rick.jpg',
+    image: 'Rick.jpg',
     title: 'Сублимированный архетип: методология и особенности',
     text: 'Кризис начинает культурный объект. Стресс, конечно, спонтанно выбирает феноменологический архетип, в частности, "тюремные психозы", индуцируемые при различных психопатологических типологиях. Ассоциация откровенна.',
   },
@@ -19,7 +19,7 @@ function App() {
   return (
     <div className="App">
       {cards.map((card, idx) => (
-        <Card key={idx} imgSrc={card.image}>
+        <Card key={idx} img={card.image}>
           <div className="card-body">
             <h5 className="card-title">{card.title}</h5>
             <p className="card-text">{card.text}</p>
